@@ -1,0 +1,4 @@
+node_modules
+gulpfile.js
+public_html/dist/*.js
+public_html/src/scripts/vendor/*.js

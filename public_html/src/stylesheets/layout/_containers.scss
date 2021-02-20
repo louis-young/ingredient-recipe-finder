@@ -1,0 +1,30 @@
+$mobile-width: 95%;
+$tablet-width: 85%;
+$laptop-width: 75%;
+
+$max-width: 1224px;
+
+$small-max-width: 1000px;
+$large-max-width: 1500px;
+
+.container {
+  width: $mobile-width;
+  max-width: $max-width;
+  margin: auto;
+
+  @include tablet {
+    width: $tablet-width;
+  }
+
+  @include laptop {
+    width: $laptop-width;
+  }
+
+  &--small {
+    max-width: $small-max-width;
+  }
+
+  &--large {
+    max-width: $large-max-width;
+  }
+}

@@ -1,0 +1,95 @@
+.ingredients {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .ingredient {
+    cursor: pointer;
+    background: #eeeeee;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: #474747;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 1rem;
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
+
+.form {
+  max-width: 750px;
+  margin: auto;
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__input,
+  &__submit {
+    border: none;
+    height: 45px;
+  }
+  &__input {
+    width: 100%;
+    background: transparent;
+    border: solid grey 1px;
+    color: #474747;
+  }
+  &__submit {
+    background: #302b63;
+    color: white;
+    font-weight: $semi-bold;
+    padding: 0;
+
+    font-size: 2rem;
+    transition: 0.3s;
+    margin-top: 1rem;
+    width: 100%;
+    @include tablet {
+      width: 150px;
+      margin-top: initial;
+      margin-left: 2rem;
+    }
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
+
+.header {
+  padding: 1rem 0;
+  background: white;
+}
+
+.hero {
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  @include tablet {
+    min-height: 500px;
+  }
+}
+
+.recipes {
+  padding: 2.5rem 0;
+}
+.recipe {
+  padding: 1rem;
+  border-bottom: solid grey 1px;
+  &__title {
+    font-weight: $semi-bold;
+    padding: 0 0 0.75rem 0;
+    font-size: 1.2rem;
+    color: #302b63;
+  }
+  &__ingredients {
+    padding: 0;
+    text-transform: capitalize;
+  }
+}

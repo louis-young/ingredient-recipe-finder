@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600");
+
+body {
+  font-family: $body-font-family;
+  color: $primary-text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+textarea,
+input,
+label {
+  line-height: $line-height;
+  color: $primary-text-color;
+}
+
+a {
+  @extend %hover;
+}
+
+h1 {
+  padding: 1.5rem 0;
+  @include tablet {
+    padding: 2.5rem 0;
+  }
+}
+
+h2 {
+  padding: 1rem 0;
+  @include tablet {
+    padding: 1.5rem 0;
+  }
+}
+
+h3 {
+  padding: 0.75rem 0;
+  @include tablet {
+    padding: 1rem 0;
+  }
+}
+
+h4 {
+  padding: 0.5rem 0;
+  @include tablet {
+    padding: 0.75rem 0;
+  }
+}
+
+h5 {
+  padding: 0.25rem 0;
+  @include tablet {
+    padding: 0.5rem 0;
+  }
+}
+
+h6 {
+  padding: 0.25rem 0;
+}
+
+p {
+  padding: 0.5rem 0;
+  @include tablet {
+    padding: 1rem 0;
+  }
+}
