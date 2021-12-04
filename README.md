@@ -9,3 +9,4 @@ A website that finds recipe ideas based on ingredients you have.
 ## Description
 
 A website that finds different recipe ideas based on ingredients you have.
+
